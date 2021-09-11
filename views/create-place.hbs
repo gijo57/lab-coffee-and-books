@@ -1,0 +1,19 @@
+<div id='map'></div>
+
+<form method='POST'>
+    <label for='input-name'>Place name</label>
+    <input id='input-name' type='text' placeholder='Name' name='name'></input>
+    <label for='input-type'>Place type</label>
+    <select name="type" id="input-type">
+        <option value="coffee_shop">Coffee shop</option>
+        <option value="bookstore">Bookstore</option>
+    </select>
+    <label for='input-latitude'>Latitude</label>
+    <input id='input-latitude' type='text' name='latitude'></input>
+    <label for='input-longitude'>Longitude</label>
+    <input id='input-longitude' type='text' name='longitude'></input>
+    <button>Add place</button>
+</form>
+
+<script src='/scripts/initMap.js'></script>
+<script src="https://maps.googleapis.com/maps/api/js?key={{apiKey}}&callback=initMap"></script>

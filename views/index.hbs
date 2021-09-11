@@ -1,2 +1,10 @@
 <h1>{{title}}</h1>
-<p>Welcome to {{title}}</p>
+<div id='map'></div>
+
+
+<script src='/scripts/initMap.js'></script>
+<script src="https://maps.googleapis.com/maps/api/js?key={{apiKey}}&callback=showMap"></script>
+<script>
+    const places = {{{ json places }}}
+    showMap(places)
+</script>
